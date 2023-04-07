@@ -7,8 +7,10 @@ RSpec.describe UsdaService do
 
       expect(search_results).to be_a(Hash)
       expect(search_results[:foods]).to be_an(Array)
+      expect(search_results[:foods].first).to have_key(:gtinUpc)
       expect(search_results[:foods].first).to have_key(:description)
-
+      expect(search_results[:foods].first).to have_key(:brandOwner)
+      expect(search_results[:foods].first).to have_key(:ingredients)
     end
   end
 end
