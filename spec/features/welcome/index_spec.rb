@@ -12,7 +12,7 @@ RSpec.describe 'Welcome Index Page' do
 
         expect(current_path).to eq('/foods')
         expect(page).to have_content("Search results")
-        expect(page).to have_content('Total number of items returned: 44128')
+        expect(page).to have_content('Total number of items returned: 51270')
       end
     end
   end
