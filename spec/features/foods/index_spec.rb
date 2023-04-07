@@ -1,7 +1,9 @@
-require 'rails_helper'
+# require 'rails_helper'
 
-RSpec.describe 'foods Index Page' do
-  describe 'as a user to /foods' do
+# RSpec.describe 'foods Index Page' do
+#   describe 'as a user to /foods' do
     
-  end
-end
+#   end
+# end
+
+#should move tests from welcome index spec to foods index spec
