@@ -3,7 +3,7 @@ require 'faraday'
 class UsdaService
 
   def self.search_foods(search_term)
-    get_url("/fdc/v1/foods/search?query=#{search_term}&pageSize=50&pageNumber=2")
+    get_url("/fdc/v1/foods/search?pageSize=50&pageNumber=2&sortBy=dataType.keyword&sortOrder=asc&query=#{search_term}")
   end
   
   private
